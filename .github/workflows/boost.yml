@@ -31,5 +31,5 @@ jobs:
         shell: bash
         run: |
           npm cache clean --force
-          npm install api-qasim stickers-formatter gspeak --no-save
+          npm install api-qasim stickers-formatter mediaforge gspeak --no-save
           
