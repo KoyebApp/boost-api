@@ -1,4 +1,4 @@
-name: Boost
+name: Test
 
 on:
   schedule:
