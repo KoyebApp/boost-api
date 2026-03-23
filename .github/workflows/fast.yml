@@ -26,3 +26,6 @@ jobs:
         run: |
           npm cache clean --force
           npm install stickers-formatter mediaforge gspeak api-qasim --no-save
+
+      - name: Install JSR package
+        run: npx jsr add @globaltech/gspeak
