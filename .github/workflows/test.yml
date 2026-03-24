@@ -28,4 +28,4 @@ jobs:
           npm install stickers-formatter mediaforge gspeak api-qasim --no-save
 
       - name: Install JSR package
-        run: npx jsr add @globaltech/gspeak
+        run: npx jsr add @globaltech/gspeak @globaltech/mediaforge
