@@ -1,0 +1,153 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "kinetex",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+
+  "vars": {
+    "UPSTREAM_BASE_URL":    "https://jsonplaceholder.typicode.com",
+    "CORPORATE_PROXY_URL":  "http://proxy.corp.internal:3128",
+    "SOCKS5_PROXY_URL":     "socks5://127.0.0.1:1080",
+    "API_TOKEN":            "demo-api-token-kinetex",
+    "SSE_TOKEN":            "demo-sse-token-kinetex",
+    "PROXY_USER":           "demo-proxy-user",
+    "PROXY_PASS":           "demo-proxy-pass",
+    "DIGEST_USER":          "demo-digest-user",
+    "DIGEST_PASS":          "demo-digest-pass",
+    "OAUTH2_TOKEN_URL":     "",
+    "OAUTH2_SCOPE":         "read",
+    "OAUTH2_CLIENT_ID":     "",
+    "OAUTH2_CLIENT_SECRET": ""
+  },
+
+  "env": {
+    "api-gateway": {
+      "name": "kinetex",
+      "vars": {
+        "UPSTREAM_BASE_URL": "https://jsonplaceholder.typicode.com",
+        "CORPORATE_PROXY_URL": "http://proxy.corp.internal:3128",
+        "SOCKS5_PROXY_URL": "socks5://127.0.0.1:1080",
+        "API_TOKEN": "demo-api-token-kinetex",
+        "SSE_TOKEN": "demo-sse-token-kinetex",
+        "PROXY_USER": "demo-proxy-user",
+        "PROXY_PASS": "demo-proxy-pass",
+        "DIGEST_USER": "demo-digest-user",
+        "DIGEST_PASS": "demo-digest-pass",
+        "OAUTH2_TOKEN_URL": "",
+        "OAUTH2_SCOPE": "read",
+        "OAUTH2_CLIENT_ID": "",
+        "OAUTH2_CLIENT_SECRET": ""
+      }
+    },
+    "zod-validator": {
+      "name": "kinetex-zod",
+      "vars": {
+        "UPSTREAM_BASE_URL": "https://jsonplaceholder.typicode.com",
+        "CORPORATE_PROXY_URL": "http://proxy.corp.internal:3128",
+        "SOCKS5_PROXY_URL": "socks5://127.0.0.1:1080",
+        "API_TOKEN": "demo-api-token-kinetex",
+        "SSE_TOKEN": "demo-sse-token-kinetex",
+        "PROXY_USER": "demo-proxy-user",
+        "PROXY_PASS": "demo-proxy-pass",
+        "DIGEST_USER": "demo-digest-user",
+        "DIGEST_PASS": "demo-digest-pass",
+        "OAUTH2_TOKEN_URL": "",
+        "OAUTH2_SCOPE": "read",
+        "OAUTH2_CLIENT_ID": "",
+        "OAUTH2_CLIENT_SECRET": ""
+      }
+    },
+    "valibot-forms": {
+      "name": "kinetex-valibot",
+      "vars": {
+        "UPSTREAM_BASE_URL": "https://jsonplaceholder.typicode.com",
+        "CORPORATE_PROXY_URL": "http://proxy.corp.internal:3128",
+        "SOCKS5_PROXY_URL": "socks5://127.0.0.1:1080",
+        "API_TOKEN": "demo-api-token-kinetex",
+        "SSE_TOKEN": "demo-sse-token-kinetex",
+        "PROXY_USER": "demo-proxy-user",
+        "PROXY_PASS": "demo-proxy-pass",
+        "DIGEST_USER": "demo-digest-user",
+        "DIGEST_PASS": "demo-digest-pass",
+        "OAUTH2_TOKEN_URL": "",
+        "OAUTH2_SCOPE": "read",
+        "OAUTH2_CLIENT_ID": "",
+        "OAUTH2_CLIENT_SECRET": ""
+      }
+    },
+    "proxy-fetcher": {
+      "name": "kinetex-proxy",
+      "vars": {
+        "UPSTREAM_BASE_URL": "https://jsonplaceholder.typicode.com",
+        "CORPORATE_PROXY_URL": "http://proxy.corp.internal:3128",
+        "SOCKS5_PROXY_URL": "socks5://127.0.0.1:1080",
+        "API_TOKEN": "demo-api-token-kinetex",
+        "SSE_TOKEN": "demo-sse-token-kinetex",
+        "PROXY_USER": "demo-proxy-user",
+        "PROXY_PASS": "demo-proxy-pass",
+        "DIGEST_USER": "demo-digest-user",
+        "DIGEST_PASS": "demo-digest-pass",
+        "OAUTH2_TOKEN_URL": "",
+        "OAUTH2_SCOPE": "read",
+        "OAUTH2_CLIENT_ID": "",
+        "OAUTH2_CLIENT_SECRET": ""
+      }
+    },
+    "sse-relay": {
+      "name": "kinetex-sse",
+      "vars": {
+        "UPSTREAM_BASE_URL": "https://jsonplaceholder.typicode.com",
+        "CORPORATE_PROXY_URL": "http://proxy.corp.internal:3128",
+        "SOCKS5_PROXY_URL": "socks5://127.0.0.1:1080",
+        "API_TOKEN": "demo-api-token-kinetex",
+        "SSE_TOKEN": "demo-sse-token-kinetex",
+        "PROXY_USER": "demo-proxy-user",
+        "PROXY_PASS": "demo-proxy-pass",
+        "DIGEST_USER": "demo-digest-user",
+        "DIGEST_PASS": "demo-digest-pass",
+        "OAUTH2_TOKEN_URL": "",
+        "OAUTH2_SCOPE": "read",
+        "OAUTH2_CLIENT_ID": "",
+        "OAUTH2_CLIENT_SECRET": ""
+      }
+    },
+    "graphql-proxy": {
+      "name": "kinetex-graphql",
+      "vars": {
+        "UPSTREAM_BASE_URL": "https://jsonplaceholder.typicode.com",
+        "CORPORATE_PROXY_URL": "http://proxy.corp.internal:3128",
+        "SOCKS5_PROXY_URL": "socks5://127.0.0.1:1080",
+        "API_TOKEN": "demo-api-token-kinetex",
+        "SSE_TOKEN": "demo-sse-token-kinetex",
+        "PROXY_USER": "demo-proxy-user",
+        "PROXY_PASS": "demo-proxy-pass",
+        "DIGEST_USER": "demo-digest-user",
+        "DIGEST_PASS": "demo-digest-pass",
+        "OAUTH2_TOKEN_URL": "",
+        "OAUTH2_SCOPE": "read",
+        "OAUTH2_CLIENT_ID": "",
+        "OAUTH2_CLIENT_SECRET": ""
+      }
+    },
+    "misc-features": {
+      "name": "kinetex-misc",
+      "vars": {
+        "UPSTREAM_BASE_URL": "https://jsonplaceholder.typicode.com",
+        "CORPORATE_PROXY_URL": "http://proxy.corp.internal:3128",
+        "SOCKS5_PROXY_URL": "socks5://127.0.0.1:1080",
+        "API_TOKEN": "demo-api-token-kinetex",
+        "SSE_TOKEN": "demo-sse-token-kinetex",
+        "PROXY_USER": "demo-proxy-user",
+        "PROXY_PASS": "demo-proxy-pass",
+        "DIGEST_USER": "demo-digest-user",
+        "DIGEST_PASS": "demo-digest-pass",
+        "OAUTH2_TOKEN_URL": "",
+        "OAUTH2_SCOPE": "read",
+        "OAUTH2_CLIENT_ID": "",
+        "OAUTH2_CLIENT_SECRET": ""
+      }
+    }
+  }
+}
